@@ -1,32 +1,71 @@
-# Gesture Word Duel (v5) — Advanced Tracking + UI + Camera Settings
+# NeuroHand: Interface Protocol 🤖✋
 
-## New in v5
-### Advanced hand tracking
-- Uses **full hand** (palm center from multiple stable landmarks)
-- Openness score uses **finger straightness + distances + thumb**
-- Hysteresis + EMA smoothing for stable states:
-  - open -> closing -> fist
+**NeuroHand: Interface Protocol** is a futuristic hand-gesture interaction game where the player becomes a **Human × Machine Interface**.
 
-### Ultra-smooth motion
-- Uses a **One Euro Filter** (velocity-based smoothing):
-  - smooth when slow (kills jitter)
-  - responsive when fast (no lag)
+Your hand is not a traditional controller.
+It is a **biological input device** that communicates directly with an intelligent system in real time.
 
-### Fist detection improvements
-- Clear separation: OPEN / CLOSING / FIST
-- No double-clicks: click is debounced and requires stable fist frames
+The game focuses on precision, system logic, and a clean futuristic experience — not randomness or arcade-style gameplay.
 
-### New screens
-- **Camera Settings**: choose camera per player inside the game
+---
 
-## Run (PowerShell)
-```powershell
-py -3.11 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python main.py
-```
+## 🧠 Vision
 
-## Notes
-- Two-player mode uses **two independent trackers** (two cameras).
-- If your second camera is not index 1, open **Camera Settings** and pick the correct camera.
+- Human × Machine Interface (HMI)
+- Real-time hand gesture control
+- Every movement has meaning
+- System-driven, precise, and engineered feel
+- Futuristic dark UI with neon technical accents
+
+---
+
+## 🕹️ Gameplay Overview
+
+1. The system reads hand input using the camera.
+2. Hand landmarks and gestures are detected.
+3. Gestures are translated into commands.
+4. The interface responds instantly and visually.
+
+You don’t “play” the system —  
+**you operate it.**
+
+---
+
+## 💻 System Requirements
+
+### Operating System
+- Windows 10 / 11 (recommended)
+- macOS or Linux (should work with proper setup)
+
+### Hardware
+- Webcam or external camera
+- Stable lighting for accurate hand detection
+
+---
+
+## 🧰 Technology Stack
+
+### Programming Language
+- **Python**
+
+### Python Version
+- **Python 3.10 or higher**
+
+### Libraries & Dependencies
+- `opencv-python` – camera capture & image processing
+- `mediapipe` – hand tracking & landmarks
+- `numpy` – mathematical operations
+
+Optional (depending on build):
+- `pygame` – game loop & rendering
+- `cvzone` – helper utilities for vision
+- `tkinter` / `PyQt5` – UI elements
+
+---
+
+## 📦 Installation
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Raadwajeeh/neurohand-interface-protocol.git
+cd neurohand-interface-protocol
