@@ -1,0 +1,1 @@
+Arcade Kids Visual Pack (EN/NL)\n- Visual-only overhaul: particles, colorful overlays, arcade cursor, word banner.\n- No changes to hand tracking / cursor math / gameplay rules.\n- Implemented via src/ui/arcade_fx.py and small draw hooks in src/screens/game.py.\n
